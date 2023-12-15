@@ -1,6 +1,6 @@
-# scala-library-starter.g8
+# mill-scala3-library-starter.g8
 
-A *mildly opinionated* Giter8 template for a scala 3 library.  
+A *mildly opinionated* Giter8 template for a Scala 3 library with Mill build tool.  
 
 ## Quickstart
 
