@@ -18,6 +18,12 @@
 ./mill __.reformat
 ```
 
+### Docs
+```sh
+./mill docs.hepek
+```
+
+Open `docs/hepek_output/index.html`
 
 ---
 

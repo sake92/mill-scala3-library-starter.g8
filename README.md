@@ -6,9 +6,14 @@ A *mildly opinionated* Giter8 template for a scala 3 library.
 
 1. Create a new, empty GitHub repo, with `main` branch
 1. Clone the repo, and run this inside it:
-```sh
-mill -i init sake92/mill-scala3-library-starter.g8 -o .
-```
+    ```sh
+    mill -i init sake92/mill-scala3-library-starter.g8 -o .
+    ```
+1. Tell git that `mill` is executable:
+    ```sh
+    git update-index --chmod=+x ./mill
+    ```
+1. Develop, commit, push
 
 Enjoy!
 
@@ -24,12 +29,6 @@ Or simply copy-paste my setup from [Tupson](https://github.com/sake92/tupson/blo
 ### CI
 
 Runs tests on Java 11, 17, 21.
-
-If you get an error "./mill: Permission denied" do the following
-```sh
-git update-index --chmod=+x ./mill
-```
-
 
 ---
 
