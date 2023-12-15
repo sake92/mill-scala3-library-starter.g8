@@ -25,6 +25,12 @@ Or simply copy-paste my setup from [Tupson](https://github.com/sake92/tupson/blo
 
 Runs tests on Java 11, 17, 21.
 
+If you get an error "./mill: Permission denied" do the following
+```sh
+git update-index --chmod=+x ./mill
+```
+
+
 ---
 
 ### CD
