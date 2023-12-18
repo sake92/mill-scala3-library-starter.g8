@@ -27,7 +27,7 @@ object Index extends TutorialPage {
         )
         def scalacOptions = super.scalacOptions() ++ Seq("-Yretain-trees")
         ```
-        """
+        """.md
       ),
       Section(
         "Sbt",
@@ -38,7 +38,7 @@ object Index extends TutorialPage {
         )
         scalacOptions ++= Seq("-Yretain-trees")
         ```
-        """
+        """.md
       ),
       Section(
         "Scala CLI",
@@ -46,7 +46,7 @@ object Index extends TutorialPage {
         ```scala
         //> using dep \${Consts.ArtifactOrg}::\${Consts.ArtifactName}:\${Consts.ArtifactVersion}
         ```
-        """
+        """.md
       ),
       Section(
         "Scastie",
