@@ -14,6 +14,4 @@ val Bundle = locally {
   b.withGrid(grid)
 }
 
-val chl = PrismCodeHighlightComponents.default
-
 val FA = ba.sake.hepek.fontawesome5.FA

@@ -16,10 +16,11 @@ object Index extends ReferencePage {
     div(
       s"""
       ...
-      """.md,
-      chl.scala(s"""
+
+      ```scala
       println("Hello!")
-      """)
+      ```
+      """.md
     )
   )
 }

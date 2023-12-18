@@ -20,33 +20,33 @@ object Index extends TutorialPage {
     List(
       Section(
         "Mill",
-        div(
-          chl.scala(s"""
-          def ivyDeps = super.ivyDeps() ++ Agg(
-            ivy"\${Consts.ArtifactOrg}::\${Consts.ArtifactName}:\${Consts.ArtifactVersion}"
-          )
-          def scalacOptions = super.scalacOptions() ++ Seq("-Yretain-trees")
-          """)
+        s"""
+        ```scala
+        def ivyDeps = super.ivyDeps() ++ Agg(
+          ivy"\${Consts.ArtifactOrg}::\${Consts.ArtifactName}:\${Consts.ArtifactVersion}"
         )
+        def scalacOptions = super.scalacOptions() ++ Seq("-Yretain-trees")
+        ```
+        """
       ),
       Section(
         "Sbt",
-        div(
-          chl.scala(s"""
-          libraryDependencies ++= Seq(
-            "\${Consts.ArtifactOrg}" %% "\${Consts.ArtifactName}" % "\${Consts.ArtifactVersion}"
-          )
-          scalacOptions ++= Seq("-Yretain-trees")
-          """)
+        s"""
+        ```scala
+        libraryDependencies ++= Seq(
+          "\${Consts.ArtifactOrg}" %% "\${Consts.ArtifactName}" % "\${Consts.ArtifactVersion}"
         )
+        scalacOptions ++= Seq("-Yretain-trees")
+        ```
+        """
       ),
       Section(
         "Scala CLI",
-        div(
-          chl.scala(s"""
-          //> using dep \${Consts.ArtifactOrg}::\${Consts.ArtifactName}:\${Consts.ArtifactVersion}
-          """)
-        )
+        s"""
+        ```scala
+        //> using dep \${Consts.ArtifactOrg}::\${Consts.ArtifactName}:\${Consts.ArtifactVersion}
+        ```
+        """
       ),
       Section(
         "Scastie",
@@ -56,11 +56,9 @@ object Index extends TutorialPage {
       ),
       Section(
         "Examples",
-        div(
-          s"""
-          ..
-          """
-        )
+        s"""
+        ..
+        """.md
       )
     )
   )
